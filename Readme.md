@@ -24,7 +24,12 @@ There is an official [documentation](https://www.printed-droid.com/kb/pairing-ps
 2. Connect the Astrocomms to your computer, via the Micro-USB port of the Arduino Mega 2560 with the USB Shield. 
 ![USB Port to configure PS3 Controller](./pictures/pic1.png)
 
-3. Use a serial monitor tool like the one provided in Arduino IDE. Select the right 
+3. Use a serial monitor tool like the one provided in Arduino IDE. Select the right Board, being *Arduiono Mega or Mega 2560* and the correct Port
+![board in Arduino IDE](./pictures/pic2.png)
+Make sure you have the correct baud-rate of *115200* selected
+![board in Arduino IDE](./pictures/pic3.png)
+
+
 
 3. Optional (but recommended): Enable serial debugging. Change ENABLE_UHS_DEBUGGING to 1 in settings.h
 

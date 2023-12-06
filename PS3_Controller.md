@@ -1,5 +1,5 @@
-# How to pair PS3 Move Controller
-These instructions will guide you through the pairing of your 2 PS3 Move Controllers to your Astrocomms board.
+# How to pair PS3 Move Navigation
+These instructions will guide you through the pairing of your 2 PS3 Move Navigation controller to your Astrocomms board.
 
 I do assume some experience with ArduinoIDE ...
 
@@ -26,17 +26,17 @@ Local Bluetooth Address: ##:##:##:##:##:##
 Wait For Incoming Connection Request
 ``` 
 
-8. Unplug the Bluetooth Dongle and connect the PS3 Move Controller via USB Cable to the USB port that previously had the Bluetooth Dongle.
+8. Unplug the Bluetooth Dongle and connect the PS3 Move Navigation via USB Cable to the USB port that previously had the Bluetooth Dongle.
 
-9. This step will partly pair the PS3 Move Controller  to the Bluetooth Dongle, so look for the following on the Serial Monitor, with the MAC Address being the same as the one of the Dongle.
+9. This step will partly pair the PS3 Move Navigation  to the Bluetooth Dongle, so look for the following on the Serial Monitor, with the MAC Address being the same as the one of the Dongle.
 ```
 Navigation Controller Connected
 Bluetooth Address was set to: ##:##:##:##:##:##
 ```
 
-10. Disconnect the PS3 Move Controller via the USB Cable and re-insert the Bluetooth Dongle.
+10. Disconnect the PS3 Move Navigation via the USB Cable and re-insert the Bluetooth Dongle.
 
-11. Power on the PS3 Move Controller and look for the following messages on the Serial Monitor, this time the MAC Address should be something new.
+11. Power on the PS3 Move Navigation and look for the following messages on the Serial Monitor, this time the MAC Address should be something new.
 ```
 Gamepad is connecting
 Incoming Connection Request
@@ -49,14 +49,14 @@ Connected to Device: ##:##:##:##:##:##
 String PS3ControllerFootMac = "##:##:##:##:##:##";
 ```
 
-13. Repeat steps 8 to 12 to identify the MAC Address of the second PS3 Move Controller and paste it into the variable for the MAC Address of the Dome
+13. Repeat steps 8 to 12 to identify the MAC Address of the second PS3 Move Navigation and paste it into the variable for the MAC Address of the Dome
 ```
 String PS3ControllerDomeMac = "##:##:##:##:##:##";
 ```
 
 14. Compile and upload the altered *Shadow_MD_DualController_Template.ino* sketch to the Arduino Mega
 
-15. When powering on both PS3 Move Controller, you should see the following messages on the Serial Monitor
+15. When powering on both PS3 Move Navigation, you should see the following messages on the Serial Monitor
 ```
 We have our FOOT controller connected.
 ...

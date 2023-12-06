@@ -19,4 +19,5 @@ lorem ipsum
 There is an official [documentation](https://www.printed-droid.com/kb/pairing-ps-move-controllers/) and a [YouTube video](https://www.youtube.com/watch?v=IC9cXuCXJSE) available on how to connect a PS3 Move Controller to your Astrocomms board. Unfortuntely I have found some minor glitches in those documents.
 
 ### Updated Instruction
-[PS3 Controller](file:./PS3_Controller.md)
+[PS3 Controller](./PS3_Controller.md)
+

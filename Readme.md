@@ -24,14 +24,24 @@ There is an official [documentation](https://www.printed-droid.com/kb/pairing-ps
 2. Connect the Astrocomms to your computer, via the Micro-USB port of the Arduino Mega 2560 with the USB Shield. 
 ![USB Port to configure PS3 Controller](./pictures/pic1.png)
 
-3. Use a serial monitor tool like the one provided in Arduino IDE. Select the right Board, being *Arduiono Mega or Mega 2560* and the correct Port
-![board in Arduino IDE](./pictures/pic2.png)
-Make sure you have the correct baud-rate of *115200* selected
-![board in Arduino IDE](./pictures/pic3.png)
+3. Add the needed [Arduino Libraries](https://www.printed-droid.com/wp-content/uploads/2020/01/SHADOW_MD_Arduino_Libraries.zip) to your local Arduino IDE, by extracting the zip file to the right location.
 
+3. Upload the [SHADOW (MD) Sketch](https://www.printed-droid.com/wp-content/uploads/2020/01/SHADOW_MD_Sketch_.zip) to your Arduino board.
 
+4. Use a serial monitor tool like the one provided in Arduino IDE. Select the right Board, being *Arduiono Mega or Mega 2560* and the correct Port with a baud rate of *115200*
+![USB Port to configure PS3 Controller](./pictures/pic2.png)
 
-3. Optional (but recommended): Enable serial debugging. Change ENABLE_UHS_DEBUGGING to 1 in settings.h
+5. Optional (but recommended): make sure that serial debugging is enabled in the source code of the USB_Host_Shield library. To do so, check for `#ENABLE_UHS_DEBUGGING 1` in settings.h, as it should be.
+
+6. After initialization, if Debugging is enabled, the Serial Monitor should display the following:
+```
+PS3 Bluetooth Library Started
+Bluetooth Dongle Inititialized
+HCI Reset complete
+Local Bluetooth Address: ##:##:##:##:##:##
+Wait For Incoming Connection Request
+``` 
+
 
 
 

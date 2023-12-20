@@ -63,3 +63,10 @@ We have our FOOT controller connected.
 We have our DOME controller connected.
 ```
 
+# Connecting Controller
+Please do note, that every time you power-up your system, you will have to connect the two controller in the same order. 
+
+1. Foot
+2. Dome
+
+otherwise the Astrocomms and your Controller will not connect.

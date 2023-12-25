@@ -19,7 +19,7 @@ Although the official instructions states to change the DIP Switches when flashi
 
 Please also make sure that you change the Baud-Rate of the Serial Monitor to 9600 Baud and to add "Carriage Return"
 
-![Serial Monitor Settings](./pictures/Nano_Serial_Monitor.png)
+![Serial Monitor Settings](./pictures/Nano_Serial_Monitor.png =50%)
 
 Don't forget to change back the DIP-Switches to their original state "1", "2" and "3" to "On" otherwise you will not be able to operate your servos via your controller or the App.
 

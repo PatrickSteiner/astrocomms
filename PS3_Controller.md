@@ -1,4 +1,7 @@
 # How to pair PS3 Move Navigation Controller
+
+There is an official [documentation](https://www.printed-droid.com/kb/pairing-ps-move-controllers/) and a [YouTube video](https://www.youtube.com/watch?v=IC9cXuCXJSE) available on how to connect a PS3 Move Navigation to your Astrocomms board. Unfortuntely I have found some minor glitches in those documents.
+
 These instructions will guide you through the pairing of your 2 PS3 Move Navigation controller to your Astrocomms board.
 
 I do assume some experience with ArduinoIDE ...

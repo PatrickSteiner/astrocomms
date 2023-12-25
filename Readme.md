@@ -16,5 +16,5 @@ This document is rather unstructured at this point in time. You will have to loo
 [PS3 Controller](./PS3_Controller.md)
 
 ## Changing Servo Setting
-[PS3 Controller](./Servo.md)
+[Servos](./Servo.md)
 

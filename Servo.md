@@ -21,3 +21,5 @@ Please also make sure that you change the Baud-Rate of the Serial Monitor to 960
 
 ![Serial Monitor Settings](./pictures/Nano_Serial_Monitor.png)
 
+Don't forget to change back the DIP-Switches to their original state "1", "2" and "3" to "On" otherwise you will not be able to operate your servos via your controller or the App.
+

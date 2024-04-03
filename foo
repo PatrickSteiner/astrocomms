@@ -1,0 +1,72 @@
+[18:06:44] INFO: The otbr-web is disabled.
+s6-rc: info: service mdns: starting
+s6-rc: info: service s6rc-oneshot-runner: starting
+s6-rc: info: service mdns successfully started
+s6-rc: info: service s6rc-oneshot-runner successfully started
+s6-rc: info: service fix-attrs: starting
+s6-rc: info: service banner: starting
+s6-rc: info: service fix-attrs successfully started
+s6-rc: info: service legacy-cont-init: starting
+s6-rc: info: service legacy-cont-init successfully started
+[18:06:44] INFO: Starting mDNS Responder...
+Default: mDNSResponder (Engineering Build) (Apr  3 2024 12:15:50) starting
+
+-----------------------------------------------------------
+ Add-on: OpenThread Border Router
+ OpenThread Border Router add-on
+-----------------------------------------------------------
+ Add-on version: 2.5.1
+ You are running the latest version of this add-on.
+ System: Home Assistant OS 12.1  (amd64 / generic-x86-64)
+ Home Assistant Core: 2024.3.3
+ Home Assistant Supervisor: 2024.03.1
+-----------------------------------------------------------
+ Please, share the above information when looking for help
+ or support in, e.g., GitHub, forums or the Discord chat.
+-----------------------------------------------------------
+s6-rc: info: service banner successfully started
+s6-rc: info: service universal-silabs-flasher: starting
+[18:06:46] INFO: Flashing firmware is disabled
+s6-rc: info: service universal-silabs-flasher successfully started
+s6-rc: info: service otbr-agent: starting
+[18:06:47] INFO: Setup OTBR firewall...
+[18:06:47] INFO: Starting otbr-agent...
+otbr-agent[164]: [NOTE]-AGENT---: Running 0.3.0-2279c02-dirty
+otbr-agent[164]: [NOTE]-AGENT---: Thread version: 1.3.0
+otbr-agent[164]: [NOTE]-AGENT---: Thread interface: wpan0
+otbr-agent[164]: [NOTE]-AGENT---: Radio URL: spinel+hdlc+uart:///dev/ttyACM0?uart-baudrate=460800
+otbr-agent[164]: [NOTE]-AGENT---: Radio URL: trel://enp1s0
+otbr-agent[164]: [NOTE]-ILS-----: Infra link selected: enp1s0
+otbr-agent[164]: 00:00:00.022 [N] RoutingManager: BR ULA prefix: fd5d:dcee:7fb4::/48 (loaded)
+otbr-agent[164]: 00:00:00.022 [N] RoutingManager: Local on-link prefix: fd12:8b2a:370d:adcf::/64
+otbr-agent[164]: 00:00:00.056 [N] Mle-----------: Role disabled -> detached
+otbr-agent[164]: 00:00:00.085 [N] Platform------: [netif] Changing interface state to up.
+otbr-agent[164]: 00:00:00.106 [W] Platform------: [netif] Failed to process request#2: No such process
+otbr-agent[164]: 00:00:00.108 [W] Platform------: [netif] ADD [U] fe80:0:0:0:7806:2f38:b5a3:dcee failed (InvalidArgs)
+otbr-agent[164]: 00:00:00.108 [W] Platform------: [netif] Failed to process event, error:InvalidArgs
+otbr-agent[164]: 00:00:00.108 [W] Platform------: [netif] ADD [U] fda4:5e8e:24d3:d4ac:e05f:d97:e693:8398 failed (InvalidArgs)
+otbr-agent[164]: 00:00:00.108 [W] Platform------: [netif] Failed to process event, error:InvalidArgs
+otbr-agent[164]: 00:00:00.108 [W] Platform------: [netif] ADD [U] fda4:5e8e:24d3:d4ac:0:ff:fe00:ac00 failed (InvalidArgs)
+otbr-agent[164]: 00:00:00.108 [W] Platform------: [netif] Failed to process event, error:InvalidArgs
+otbr-agent[164]: 00:00:00.108 [W] Platform------: [netif] Failed to process request#6: No such process
+s6-rc: info: service otbr-agent successfully started
+s6-rc: info: service otbr-agent-rest-discovery: starting
+s6-rc: info: service otbr-agent-configure: starting
+[18:06:47] INFO: Enabling NAT64.
+otbr-agent[164]: 00:00:00.466 [W] Platform------: [netif] Failed to process request#7: No such process
+Done
+Done
+Done
+s6-rc: info: service otbr-agent-configure successfully started
+[18:06:48] INFO: Successfully sent discovery information to Home Assistant.
+s6-rc: info: service otbr-agent-rest-discovery successfully started
+s6-rc: info: service legacy-services: starting
+s6-rc: info: service legacy-services successfully started
+otbr-agent[164]: 00:00:26.266 [N] Mle-----------: RLOC16 ac00 -> fffe
+otbr-agent[164]: 00:00:26.774 [N] Mle-----------: Attach attempt 1, AnyPartition reattaching with Active Dataset
+otbr-agent[164]: 00:00:33.275 [N] RouterTable---: Allocate router id 43
+otbr-agent[164]: 00:00:33.275 [N] Mle-----------: RLOC16 fffe -> ac00
+otbr-agent[164]: 00:00:33.277 [N] Mle-----------: Role detached -> leader
+otbr-agent[164]: 00:00:33.277 [N] Mle-----------: Partition ID 0x2b614b12
+otbr-agent[164]: 00:00:33.320 [W] Platform------: [netif] ADD [U] fda4:5e8e:24d3:d4ac:0:ff:fe00:ac00 failed (InvalidArgs)
+o
